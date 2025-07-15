@@ -44,7 +44,7 @@ class UpdateCommand extends Command
      *
      * @var string
      */
-    protected $directory = __DIR__.'/../../../laravel/dusk/bin/';
+    protected $directory = __DIR__.'/../../../uofa/laravel-dusk/bin/';
 
     /**
      * Create a new console command instance.

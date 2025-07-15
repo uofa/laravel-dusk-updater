@@ -1,5 +1,5 @@
 {
-    "name": "staudenmeir/dusk-updater",
+    "name": "uofa/laravel-dusk-updater",
     "description": "Updater for Laravel Dusk ChromeDriver binaries",
     "license": "MIT",
     "authors": [
