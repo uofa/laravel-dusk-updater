@@ -200,7 +200,7 @@ class UpdateCommand extends Command
 
         $chromedrivers = $versions['milestones'][$milestone]['downloads']['chromedriver'];
 
-        return collect($chromedrivers)->firstWhere('platform', $slug)['url'];
+        return collect($chromedrivers)->where('platform', $slug)->first()['url'];
     }
 
     /**

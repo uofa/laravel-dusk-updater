@@ -74,7 +74,11 @@ trait DetectsChromeVersion
         }
 
         foreach ($commands as $command) {
-            $process = Process::fromShellCommandline($command);
+            if (method_exists('Process', 'fromShellCommandline')) {
+                $process = Process::fromShellCommandline($command);
+            } else {
+                $process = new Process($command);
+            }
 
             $process->run();
 
